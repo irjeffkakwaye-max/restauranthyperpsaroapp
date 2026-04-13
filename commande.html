@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Passer une commande</title>
+</head>
+<body>
+  <h1>Passer une commande</h1>
+  <form action="commande.php" method="POST">
+    <label>ID Réservation :</label>
+    <input type="number" name="id_resa" required><br>
+
+    <label>Plat (nom ou ID) :</label>
+    <input type="text" name="id_menu" required><br>
+
+    <label>Quantité :</label>
+    <input type="number" name="quantite" required><br>
+
+    <button type="submit">Commander</button>
+  </form>
+</body>
+</html>

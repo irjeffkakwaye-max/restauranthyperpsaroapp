@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Hyper Psaro - Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Amélioration du style directement ici ou dans style.css */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .menu-item {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+    .menu-item img {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+    }
+    .menu-item h3 {
+      margin: 10px 0 5px;
+      color: #333;
+    }
+    .menu-item p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .menu-item a {
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 8px 15px;
+      background: #f4b400;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .menu-item a:hover {
+      background: #d99900;
+    }
+  </style>
+</head>
+<body>
+ <nav class="navbar">
+  <div class="logo">Hyper Psaro</div>
+  <div class="burger">☰</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="reservation.html">Réservation</a></li>
+    <li><a href="commande.php">Commande</a></li>
+    <li><a href="paiement.html">Paiement</a></li>
+    <li><a href="avis.html">Avis</a></li>
+    <li><a href="menu.html">Menu</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Hero -->
+  <header class="hero" style="background: url('assets/hyperpsaro.jpg') center/cover no-repeat;">
+    <div class="overlay">
+      <h1>Hyper Psaro</h1>
+      <p>Une expérience culinaire d’exception</p>
+      <a href="reservation.html" class="btn">Réserver maintenant</a>
+    </div>
+  </header>
+
+  <!-- Section Menu -->
+  <main class="container">
+    <h2>🍽️ Nos plats</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="assets/plat1.jpg" alt="Poisson grillé">
+        <h3>Poisson grillé</h3>
+        <p>Servi avec légumes frais</p>
+        <a href="commande.php?id_menu=1">Commander</a>
+      </div>
+      <div class="menu-item">
+        <img src="assets/plat2.jpg" alt="Poulet rôti">
+        <h3>Poulet rôti</h3>
+        <p>Mariné aux herbes</p>
+        <a href="commande.php?id_menu=2">Commander</a>
+      </div>
+      <div class="menu-item">
+        <img src="assets/plat3.jpg" alt="Pâtes maison">
+        <h3>Pâtes maison</h3>
+        <p>Sauce tomate et basilic</p>
+        <a href="commande.php?id_menu=3">Commander</a>
+      </div>
+      <div class="menu-item">
+        <img src="assets/plat4.jpg" alt="Cuisse poulet et riz">
+        <h3>Cuisse poulet et riz</h3>
+        <p>Plat traditionnel</p>
+        <a href="commande.php?id_menu=4">Commander</a>
+      </div>
+      <div class="menu-item">
+        <img src="assets/plat5.jpg" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>Recette maison</p>
+        <a href="commande.php?id_menu=5">Commander</a>
+      </div>
+      <div class="menu-item">
+        <img src="assets/plat6.jpg" alt="Hamburger">
+        <h3>Hamburger</h3>
+        <p>Avec frites croustillantes</p>
+        <a href="commande.php?id_menu=6">Commander</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Hyper Psaro - Tous droits réservés Jeff BMS</p>
+  </footer>
+    <body>
+  <!-- ton contenu -->
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const navbar = document.querySelector('.navbar');
+    burger.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</body>
+</html>

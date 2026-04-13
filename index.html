@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Hyper Psaro - Commande</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff; margin: 0; }
+    .navbar { background: #000; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+    .navbar h2 { color: #ff6600; margin: 0; }
+    .navbar a { background: #ff6600; color: #fff; padding: 10px 18px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
+    .navbar a:hover { background: #cc5200; }
+    .container { background: #fff; border: 2px solid #000; border-radius: 10px; width: 420px; padding: 30px; margin: 40px auto; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+    h1 { text-align: center; color: #ff6600; margin-bottom: 20px; }
+    label { font-weight: bold; color: #000; }
+    input { width: 100%; padding: 10px; margin: 8px 0 20px; border: 1px solid #000; border-radius: 5px; }
+    button { width: 100%; padding: 12px; background: #ff6600; border: none; color: #fff; font-size: 16px; border-radius: 5px; cursor: pointer; transition: background 0.3s; }
+    button:hover { background: #cc5200; }
+  </style>
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h2>Hyper Psaro</h2>
+    <a href="reservation.html">Accueil</a>
+  </div>
+
+  <div class="container">
+    <h1>Passer une commande</h1>
+    <form action="commande.php" method="POST">
+      <label>ID Réservation :</label>
+      <input type="number" name="id_resa" required>
+
+      <label>Plat :</label>
+      <input type="text" name="id_menu" required>
+
+      <label>Quantité :</label>
+      <input type="number" name="quantite" required>
+
+      <button type="submit">Commander</button>
+    </form>
+  </div>
+</body>
+</html>
